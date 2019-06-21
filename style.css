@@ -1,0 +1,12 @@
+.wrap{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.form-group span{
+    background: lavenderblush;
+    display: block;
+    color: red;
+    padding-left: 10px;
+}

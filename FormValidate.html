@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <h2>Form Validation</h2>
+        <form action="FormValidate.html" id="form-validation">
+            <div class="form-group" id="group-number">
+                Enter Number
+                <input type="text" class="form-control" placeholder="Enter Number" id="number">
+                <span id="error_number" class="error"></span>
+            </div>
+            <div class="form-group" id="group-date">
+                Enter Date
+                <input type="text" class="form-control" placeholder="2019-06-19" id="date">
+                <span id="error_date"></span>
+            </div>
+            <div class="form-group" id="group-email">
+                Enter Email
+                <input type="email" class="form-control" placeholder="Enter Email" id="email">
+                <span id="error_email"></span>
+            </div>
+            <div class="form-group" id="group-file">
+                File <input type="file" name="" id="file" value="Chọn tệp">
+                <span id="error_file"></span>
+            </div>
+            <div class="form-group" id="group-fullwidth">
+                Enter FullWidth
+                <input type="text" class="form-control" placeholder="Enter FullWidth" id="fullwidth">
+                <span id="error_fullwidth"></span>
+            </div>
+            <div class="form-group" id="group-select" >
+                Select
+                <select name="" id="selectOption" class="form-control">
+                    <option id="" name="option"></option>
+                    <option id="" name="option">1</option>
+                    <option id="" name="option">2</option>
+                    <option id="" name="option">3</option>
+                </select>
+                <span id="error_option"></span>
+            </div>
+            <div class="form-group">
+                Checked<br>
+                <input name="checkbox" type="checkbox" id="check1">Option 1<br>
+                <input name="checkbox" type="checkbox" id="check2"> Option 2<br>
+                <input name="checkbox" type="checkbox" id="check3"> Option 3
+                <span id="error_check"></span>
+            </div>
+            <div class="form-group">
+                Radio<br>
+                <input name="radio" type="radio"> Option 1<br>
+                <input name="radio" type="radio"> Option 2<br>
+                <input name="radio" type="radio"> Option 3<br>
+                <span id="error_radio"></span>
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+<script src="binding.js"></script>
+</html>
